@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница лабораторной работы №5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe4e1;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fdf5e6;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #800020;
+    }
+
+    p {
+      font-size: 23px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #800020;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Лабораторная работа №5</h1><br>
+    </header>
+    <section>
+      <p><b>Дисциплина:</b> разработка программных приложений</p>
+      <p><b>Тема работы:</b> разработка механизмов аутентификации и авторизации для WEB-приложений на Flask</p>
+      <p><b>Цель работы:</b> изучение механизмов авторизации и регистрации при использовании микрофреймворка Flask</p><br>
+    </section>
+    <form action="{{ url_for('logout') }}" method="get">
+      <button type="submit">Выход</button>
+    </form>
+  </main>
+</body>
+</html>
